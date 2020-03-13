@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="@string/name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_name"
+                android:maxLength="50"
+                android:padding="3dp"
+                android:text="Name"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:padding="3dp"
+                android:text="@string/mobile_no"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_toRightOf="@id/txt_mobile"
+                android:maxLength="12"
+                android:padding="3dp"
+                android:text="1234567890"
+
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mobile"
+                android:padding="3dp"
+                android:text="@string/address"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_mobile"
+                android:layout_toRightOf="@+id/txt_address"
+                android:maxLength="50"
+                android:padding="3dp"
+                android:text="Vijay Nagar"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_address"
+                android:padding="3dp"
+                android:text="@string/city"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_address"
+                android:layout_toRightOf="@+id/txt_city"
+                android:maxLength="30"
+                android:padding="3dp"
+
+                android:singleLine="true"
+                android:text="Indore"
+
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_city"
+                android:padding="3dp"
+                android:text="@string/state"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_city"
+                android:layout_toRightOf="@id/txt_state"
+                android:maxLength="40"
+                android:padding="3dp"
+
+                android:singleLine="true"
+                android:text="MP"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txt_pincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_state"
+                android:padding="3dp"
+                android:text="@string/pincode"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_state"
+                android:layout_toRightOf="@+id/txt_pincode"
+                android:maxLength="7"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="452010" />
+
+
+            <TextView
+                android:id="@+id/txt_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pincode"
+                android:padding="3dp"
+                android:text="@string/landmark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pincode"
+                android:layout_toRightOf="@+id/txt_landmark"
+                android:maxLength="50"
+                android:padding="3dp"
+                android:text="Landmark" />
+
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_delete" />
+
+            <CheckBox
+                android:id="@+id/check_address"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:gravity="center" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/main"
+        android:background="#E2E2E2" />
+
+</RelativeLayout>

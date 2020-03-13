@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_baby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+
+        app:cardElevation="1dp"
+        card_view:cardCornerRadius="1dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_baby"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="3dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerHorizontal="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:layout_below="@+id/img_baby"
+
+                    >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/tv_baby"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:text="Baby"
+                android:layout_below="@+id/img_baby"
+                android:maxLines="2"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14dp"
+       />
+                </LinearLayout>
+            </RelativeLayout>
+         <!--   <ImageView
+                android:id="@+id/img_baby"
+                android:src="@drawable/no_image"
+
+                android:layout_width="85dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:layout_height="110dp" />
+-->
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

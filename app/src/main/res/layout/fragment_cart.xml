@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Fragments.CartFragment">
+
+    <LinearLayout
+        android:id="@+id/lay_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_items" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+
+        <ScrollView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/proceed_to_checkout"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:id="@+id/lc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/lc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/deliver_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/border"
+                            android:drawableStart="@drawable/ic_location_on_black_24dp"
+                            android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                            android:padding="10dp"
+                            android:text="Deliver to "
+                            android:textAlignment="center"
+                            android:textColor="@color/txt_color"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycle_view_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lc3"
+                        android:nestedScrollingEnabled="true">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <RelativeLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/recycle_view_cart"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/myview"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/pricesummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/myview"
+                            android:layout_marginTop="5dp"
+                            android:padding="10dp"
+                            android:text="Price Summary"
+                            android:textColor="@color/txt_color"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/prices"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/pricesummary"
+                            android:paddingLeft="10dp"
+                            android:text="Gst will be included"
+                            android:textColor="@color/gray"
+                            android:textSize="13sp" />
+
+
+                        <View
+                            android:id="@+id/myview2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/grey" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/relative_p1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prices">
+
+                            <TextView
+                                android:id="@+id/txt_total_sales_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:padding="10dp"
+                                android:text="Total Sales Price"
+                                android:textAlignment="center"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_sales_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@drawable/ic_rupee_indian"
+                                android:padding="10dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_p6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prices">
+
+                            <TextView
+                                android:id="@+id/txt_shipping"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:padding="10dp"
+                                android:text="@string/shipping_charges"
+                                android:textAlignment="center"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_shipping_charge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@drawable/ic_rupee_indian"
+                                android:padding="10dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_p2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prices">
+
+                            <TextView
+                                android:id="@+id/txt_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:padding="10dp"
+                                android:text="Discount"
+                                android:textAlignment="center"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@drawable/ic_rupee_indian"
+                                android:padding="10dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_p3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prices">
+
+                            <TextView
+                                android:id="@+id/txt_total_promo_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:padding="10dp"
+                                android:text="Promo Code Discount"
+                                android:textAlignment="center"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_promo_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@drawable/ic_rupee_indian"
+                                android:padding="10dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relative_p4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/prices">
+
+                            <TextView
+                                android:id="@+id/txt_total_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:padding="10dp"
+                                android:text="Total Discount"
+                                android:textAlignment="center"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_total_discount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@drawable/ic_rupee_indian"
+                                android:padding="10dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/grey" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/relative_p5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/relative_p4">
+
+                            <TextView
+                                android:id="@+id/txt_total_pay_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:padding="10dp"
+                                android:text="Total Pay Amount"
+                                android:textAlignment="center"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv_pay_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:drawableLeft="@drawable/ic_rupee_indian"
+                                android:padding="10dp"
+                                android:textColor="@color/txt_color"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/proceed_to_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/proceed"
+            android:textColor="@color/white"></Button>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile.AddUserAddress">
+
+    <include layout="@layout/normal_toolbar"
+        android:id="@+id/tool"></include>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:hint="Full Name"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_marginTop="20dp"
+                android:hint="Pincode"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:inputType="phone"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="20dp"
+                android:hint="Address"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:gravity="top|left"
+                />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_marginTop="20dp"
+                android:hint="Landmark"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="#F0F0F0"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="City"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:layout_weight="0.50"
+                android:layout_marginRight="5dp"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="State"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:layout_weight="0.50"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Mobile"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                android:background="#F0F0F0"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_marginTop="20dp"
+                android:text="Set as default address"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <Switch
+                android:id="@+id/simpleSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/Pink"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/toggle_back"/>
+
+
+            <Button
+                android:id="@+id/saveadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Address"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_borders"
+                android:layout_below="@id/text8"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

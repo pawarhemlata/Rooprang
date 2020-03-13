@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Account.ChangeLanguageActivity">
+
+    <include layout="@layout/normal_toolbar" />
+
+
+
+
+
+        <RadioGroup
+            android:id="@+id/radiogroup_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_btn_english"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:text="@string/language_english" />
+            <RadioButton
+                android:id="@+id/radio_btn_hindi"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="30dp"
+                android:background="@drawable/border"
+                android:layout_height="wrap_content"
+                android:text="@string/language_hindi" />
+
+</RadioGroup>
+
+
+</LinearLayout>

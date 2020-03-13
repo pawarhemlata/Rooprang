@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_sort_by"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff0000"
+    android:orientation="vertical"
+    android:padding="12dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort by"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:textColor="@color/Black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/txt_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:padding="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"/>
+
+
+            <Button
+                android:id="@+id/txt_relevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tittle"
+                android:layout_marginTop="20dp"
+                android:text="Relevance"
+                android:background="@color/white"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:padding="15dp"
+                android:drawableRight="@drawable/ic_check_circle"/>
+
+
+
+            <Button
+                android:id="@+id/txt_price_l_h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_relevance"
+                android:text="Price low to high"
+                android:gravity="left"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:padding="15dp"/>
+
+
+
+            <Button
+                android:id="@+id/txt_price_h_l"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:gravity="left"
+                android:layout_below="@id/txt_price_l_h"
+                android:text="Price high to low"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:padding="15dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

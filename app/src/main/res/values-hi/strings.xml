@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rooprang</string>
+    <string name="Baby">"बेबी "</string>
+    <string name="Trending_now">ट्रेंडिंग</string>
+    <string name="hey">नमस्ते</string>
+    <string name="home">"होम  "</string>
+    <string name="kids">"किड्स "</string>
+    <string name="feedback">"फीडबैक "</string>
+    <string name="forgotpwd">"फॉरगॉट पासवर्ड "</string>
+    <string name="fullname">" पूरा नाम"</string>
+    <string name="help">हेल्प</string>
+    <string name="landmark">"लैंडमार्क "</string>
+    <string name="newemail">अपना नया ईमेल नीचे दर्ज करें</string>
+    <string name="newpwd">नया पासवर्ड</string>
+    <string name="newuser">नए यूजर ?</string>
+    <string name="oldpwd">"पुराना पासवर्ड "</string>
+    <string name="orders">Your ऑर्डर्स</string>
+    <string name="password">पासवर्ड</string>
+    <string name="pincode">पिन कोड</string>
+    <string name="profiledetails">प्रोफ़ाइल विवरण</string>
+    <string name="rate">"रेट  "</string>
+    <string name="resetpwd">पासवर्ड रीसेट</string>
+    <string name="save">"सेव "</string>
+    <string name="saveandverify">"सहेजें और सत्यापित करें"</string>
+    <string name="savedaddress">"सहेजा गया पता"</string>
+    <string name="savedcards">"सहेजे गए कार्ड"</string>
+    <string name="sendotp">"  ओटीपी भेजें"</string>
+    <string name="share">शेयर</string>
+    <string name="shopnow">"अभी ख़रीदे "</string>
+    <string name="signin">" साइन इन करें"</string>
+    <string name="signout">"साइन आउट करे "</string>
+    <string name="signup">" साइन अप करें"</string>
+    <string name="state">"राज्य "</string>
+    <string name="verifyyournumber">अपना खाता बनाने के लिए अपना नंबर वेरीफाई  करें</string>
+    <string name="wishlist">"विशलिस्ट "</string>
+    <string name="account">"अकाउंट "</string>
+    <string name="action_settings">"सेटिंग "</string>
+    <string name="addcart">कार्ट में डालें</string>
+    <string name="adresss">"पता "</string>
+    <string name="alreadyhavean">पहले से ही एक अकाउंट  है?</string>
+    <string name="cart">कार्ट</string>
+    <string name="categry">"कैटेगरीज "</string>
+    <string name="change">"चेंज "</string>
+    <string name="changepassword">" पासवर्ड बदलें"</string>
+    <string name="city">"शहर "</string>
+    <string name="cnfrmpassword">"पासवर्ड की पुष्टि कीजिये"</string>
+    <string name="email">"ईमेल"</string>
+    <string name="emailorphone">" ईमेल या मोबाइल"</string>
+    <string name="next">आगे</string>
+    <string name="play_again">" फिर से चालू करें"</string>
+    <string name="play_again_desc">" स्लाइडर को फिर से देखने के लिए, गोटो सेटिंग्स -> ऐप्स -> स्वागत स्लाइडर -> स्पष्ट डेटा"</string>
+    <string name="proceed">"पे करने के लिए आगे बड़े "</string>
+    <string name="skip">"स्किप "</string>
+    <string name="view_all">" सभी देखें"</string>
+    <string name="top_brands">टॉप ब्रांड</string>
+    <string name="start">"आगे बड़े "</string>
+    <string name="slide_2_title">" सामान"</string>
+    <string name="language_hindi">" हिंदी"</string>
+    <string name="language_english">English</string>
+
+
+    <!-- home-->
+
+
+    <string name="shopbycategory">"श्रेणी के आधार पर खरीदारी करें" </string>
+    <string name="bloominstyle">"शैली में खिलते हैं"</string>
+    <string name="latest_products">"नवीनतम उत्पाद"</string>
+    <string name="stripe">"धारी जनजाति"</string>
+    <string name="preety">"गुलाबी रंग में सुंदर है"</string>
+    <string name="season_ending_sale">"सीजन खत्म होने वाली बिक्री"</string>
+    <string name="thepartyperfect">"दी  पार्टी  परफेक्टनिस्ट"</string>
+    <string name="SummerSpecial">"गर्मियों में विशेष"</string>
+    <string name="expectong_mother" translatable="false">"उम्मीद मां"</string>
+    <string name="all" translatable="false">"सब"</string>
+    <string name="baby_boy">"छोटा बच्चा"</string>
+    <string name="baby_girl">"बच्ची"</string>
+    <string name="new_born">"नया जन्म"</string>
+    <string name="search_for_product_brand_and_more">"उत्पाद ब्रांड और अधिक के लिए खोज"</string>
+    <!-- Inside acccount-->
+    <string name="haventorderyet" translatable="false">"लगता है कि आपने अभी तक ऑर्डर नहीं किया है"</string>
+
+    <string name="changelanguage">"भाषा बदलें"</string>
+
+
+    <string name="menu_gallery" translatable="false">"गैलरी"</string>
+    <string name="menu_slideshow" translatable="false">"स्लाइडशो"</string>
+    <string name="menu_tools" translatable="false">"उपकरण"</string>
+    <string name="menu_share" translatable="false">"शेयर"</string>
+    <string name="menu_send" translatable="false">"भेजें"</string>
+    <string name="menu_home">"होम"</string>
+
+
+    <string name="rs">"रु"</string>
+    <string name="link" translatable="false">"http://svttesting.online/rooprangApi/"</string>
+    <string name="select_size">"कृपया आकार का चयन करें"</string>
+    <string name="select_age">"कृपया आयु का चयन करें"</string>
+    <string name="select_pincode">"पिनकोड की आवश्यकता है"</string>
+    <string name="goto_cart">"कृपया भुगतान के लिए जाएं"</string>
+    <string name="available">"उपलब्ध"</string>
+    <string name="shipping_charges">"भेजने का शुल्क"</string>
+    <string name="product_not_shipped_this_place">"इस स्थान पर उत्पाद उपलब्ध नहीं है"</string>
+    <string name="rupees">"रु"</string>
+    <string name="quantity">"मात्रा"</string>
+    <string name="yes">"हाँ"</string>
+    <string name="no">"नहीं"</string>
+    <string name="delete_item_from_cart">"क्या आप इस आइटम को कार्ट से निकालना चाहते हैं?"</string>
+    <string name="no_items">"कोई आइटम नहीं जोड़ा गया"</string>
+    <string name="otp">"कृपया ओटीपी दर्ज करें"</string>
+    <string name="Saved_addresses">"सहेजा गया पता"</string>
+    <string name="add_addresses">"पता जोड़ें"</string>
+    <string name="address">"पता"</string>
+    <string name="name">"नाम"</string>
+    <string name="mobile_no">"मोबाइल नंबर"</string>
+
+
+    <string name="hello_blank_fragment" translatable="false">"हैलो खाली टुकड़ा"</string>
+    <string name="hello" translatable="false">"नमस्ते"</string>
+    <string name="welcome" translatable="false">"स्वागत",</string>
+    <string name="desc" translatable="false">"गर्मियों में नवजात शिशु के कपड़े लड़का लड़की बच्चे कपास बॉडी सूट अजीब प्यारा और प्यारा आउटफिट लड़का लड़की बच्चे कपास बॉडी सूट अजीब प्यारा और प्यारा कपड़े शिशु नवजात शिशु कपड़े लड़का लड़की बच्चे कपास बॉडी सूट अजीब प्यारा बॉडी सूट लघु आस्तीन प्यारा उपहार"</string>
+    <string name="slide_1_title" translatable="false">"रूपरंग"</string>
+    <string name="slide_1_desc" translatable="false">"हम यहां माता पिता की सहायता के लिए हैं"</string>
+    <string name="slide_2_desc" translatable="false">"अब आप अपने नए जन्म के लिए खरीदारी करने के लिए सभी उत्तर प्राप्त कर सकते हैं"</string>
+    <string name="slide_3_title" translatable="false">"बच्चों के कपडें"</string>
+    <string name="slide_3_desc" translatable="false">"हम नरम कपास का उपयोग करते हैं"</string>
+    <string name="title_activity_drawer_activity" translatable="false">"दराज की गतिविधि"</string>
+    <string name="navigation_drawer_open" translatable="false">"नेविगेशन दराज खोलें"</string>
+    <string name="navigation_drawer_close" translatable="false">"नेविगेशन दराज बंद करे"</string>
+    <string name="nav_header_title" translatable="false">"नमस्कार"</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">"नेविगेशन हेडर"</string>
+
+    <string name="ChangeAddAddress" translatable="false">"पता बदलें या जोड़ें"</string>
+    <string name="btncontinue" translatable="false">"जारी रखें"</string>
+    <string name="shipping_title" translatable="false">"परिवहन विवरण"</string>
+    <string name="paymentinfo" translatable="false">"भुगतान की जानकारी"</string>
+    <string name="price_sumry_title" translatable="false">"धन की जानकारी"</string>
+
+
+    <string name="access_code">Access Code</string>
+
+    <string name="pay_button">Pay</string>
+
+    <string name="merchant_id">Merchant Id</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="amount">Amount</string>
+
+    <string name="redirect_url">Redirect Url</string>
+
+    <string name="cancel_url">Cancel Url</string>
+
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="additemes">Add Items :</string>
+    <string name="Submit">Submit</string>
+    <string name="ProductDetail">Product Detail</string>
+    <string name="simillarproduct">"Similar Products "</string>
+    <string name="Pleasecheckavailblity">Please Check Availability</string>
+    <string name="walletbalance">Wallet Balance :</string>
+</resources>

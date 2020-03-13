@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name" translatable="false">Rooprang</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="hello" translatable="false">Bonjour</string>
+    <string name="welcome" translatable="false">Bienvenue,</string>
+    <string name="proceed">PROCEED TO PAY</string>
+    <string name="desc" translatable="false">Summer Newborn Baby Clothes Boy Girl Kids Cotton Bodysuit Funny Cute Kawaii Outfits Ies Boy Girl Kids Cotton Bodysuit Funny Cute Kawaii Outfits Infant Newborn Baby Clothes Boy Girl Kids Cotton Bodysuit Funny Cute Kawaii  Short sleeve Daddy gift</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title" translatable="false">RoopRang</string>
+    <string name="slide_1_desc" translatable="false">We are here to assist Mom &amp; Dad</string>
+    <string name="slide_2_title">Accessories </string>
+    <string name="slide_2_desc" translatable="false">Now you can get all the answers on what to shop for your new born</string>
+    <string name="slide_3_title" translatable="false">BaBy\'s clothes </string>
+    <string name="slide_3_desc" translatable="false">we use soft cotton</string>
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_drawer_activity" translatable="false">Drawer_activity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Hello</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="addcart">Add to Cart</string>
+
+
+    <!--    registration or login or reset pwd or change pwd-->
+    <string name="alreadyhavean">Already have an account?</string>
+    <string name="signin">Sign In</string>
+    <string name="sendotp">Send OTP</string>
+    <string name="fullname">Full Name</string>
+    <string name="mobile" translatable="false">Mobile No.</string>
+    <string name="password">Password</string>
+    <string name="cnfrmpassword">Confirm Password</string>
+    <string name="verifyyournumber">Verify your number to create your account</string>
+    <string name="signup">Sign Up</string>
+    <string name="emailorphone">Email / Mobile No.</string>
+    <string name="forgotpwd">Forgot Password</string>
+    <string name="resetpwd">Reset Password</string>
+    <string name="newpwd">New Password</string>
+    <string name="change">Change</string>
+    <string name="oldpwd">Old Password</string>
+
+
+    <!-- home-->
+
+
+    <string name="Baby">Baby </string>
+    <string name="shopbycategory">Shop By Category </string>
+    <string name="kids">Kids</string>
+    <string name="bloominstyle">Bloom in Style</string>
+    <string name="top_brands">Top Brands</string>
+    <string name="latest_products">Latest Products</string>
+    <string name="stripe">The Stripe Tribe</string>
+    <string name="preety">Be Preety In Pink</string>
+    <string name="season_ending_sale">Season Ending Sale</string>
+    <string name="thepartyperfect">The Party Perfectonist</string>
+    <string name="SummerSpecial">Summer Special</string>
+    <string name="view_all">View All</string>
+    <string name="Trending_now">Trending Now</string>
+    <string name="expectong_mother" translatable="false">Expecting Mother</string>
+    <string name="all" translatable="false">All</string>
+    <string name="baby_boy">Baby Boy</string>
+    <string name="baby_girl">Baby Girl</string>
+    <string name="new_born">New Born</string>
+    <string name="search_for_product_brand_and_more">Search for Products and more</string>
+
+
+    <!--    account-->
+
+    <string name="hey">Hey</string>
+    <string name="orders">Your Orders</string>
+    <string name="ChangeAddAddress" translatable="false">Change or Add Address</string>
+    <string name="btncontinue" translatable="false">CONTINUE</string>
+
+    <string name="savedaddress">Saved addresses</string>
+    <string name="savedcards">Saved cards</string>
+    <string name="help">Help</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="signout">Sign Out</string>
+    <string name="rate">Rate</string>
+
+
+    <!--    Bottom navigation-->
+
+    <string name="categry">Categories</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+    <string name="wishlist">Wishlist</string>
+
+
+    <!-- Inside acccount-->
+
+
+    <string name="shopnow">Shop now</string>
+    <string name="haventorderyet" translatable="false">Looks like you haven\'t placed an order yet.</string>
+    <string name="pincode">Pincode</string>
+    <string name="adresss">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="changelanguage">Change Language</string>
+
+    <string name="newuser">New User?</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="menu_tools" translatable="false">Tools</string>
+    <string name="menu_share" translatable="false">Share</string>
+    <string name="menu_send" translatable="false">Send</string>
+
+    <string name="saveandverify">Save and Verify</string>
+    <string name="newemail">Enter your new email below</string>
+    <string name="email">Email address</string>
+    <string name="save">Save</string>
+    <string name="changepassword">Change Password</string>
+    <string name="profiledetails">Profile details</string>
+    <string name="language_english">English</string>
+    <string name="language_hindi">
+हिंदी</string>
+    <string name="menu_home">Home</string>
+
+
+    <string name="shipping_title" translatable="false">Shipping Details</string>
+    <string name="paymentinfo" translatable="false">Payment Information</string>
+    <string name="price_sumry_title" translatable="false">Price Summary</string>
+
+
+    <string name="rs">Rs.</string>
+    <string name="link" translatable="false">http://svttesting.online/rooprangApi/</string>
+    <string name="select_size">Please Select Size !</string>
+    <string name="select_age">Please Select Age !</string>
+    <string name="select_pincode">Pincode required !</string>
+    <string name="goto_cart">Go To Cart</string>
+    <string name="available">Available</string>
+    <string name="shipping_charges">Shipping Charges</string>
+    <string name="product_not_shipped_this_place">Product isn\'t available at this place !</string>
+    <string name="rupees">Rs/-</string>
+    <string name="quantity">QTY :-</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_item_from_cart">Do you want to remove this Item from Cart ?</string>
+    <string name="no_items">No Item Added</string>
+    <string name="otp">Please Enter OTP</string>
+    <string name="Saved_addresses">Saved addresses</string>
+    <string name="add_addresses">Add Address</string>
+    <string name="address">Address :</string>
+    <string name="name">Name :</string>
+    <string name="mobile_no">Mobile No :</string>
+    <string name="letest_products">Letest Products</string>
+    <string name="dod">Deal Of The Day</string>
+
+    <string name="cod">Cash On Delivery</string>
+    <string name="online_pay">Pay Online</string>
+    <string name="Order_Summary">Order Summary</string>
+
+
+    <string name="BaseUrl" translatable="false">http://thelittleshoppers.com/API/images/user/</string>
+    <string name="access_code">Access Code</string>
+
+    <string name="pay_button">Pay</string>
+
+    <string name="merchant_id">Merchant Id</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="amount">Amount</string>
+
+    <string name="redirect_url">Redirect Url</string>
+
+    <string name="cancel_url">Cancel Url</string>
+
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="additemes">Add Items :</string>
+    <string name="Submit">Submit</string>
+    <string name="ProductDetail">Product Detail</string>
+    <string name="simillarproduct">"Similar Products "</string>
+    <string name="Pleasecheckavailblity">Please Check Availability</string>
+    <string name="walletbalance">Wallet Balance :</string>
+
+</resources>

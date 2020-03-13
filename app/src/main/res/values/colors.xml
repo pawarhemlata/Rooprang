@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f49cc2</color>
+    <color name="colorPrimaryDark">#4da5bd</color>
+    <color name="colorskyblue">#940E5855</color>
+    <color name="colorAccent">#f49cc2</color>
+    <color name="pink_text">#F37D8A</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Red">#F01414</color>
+    <color name="Pink">#F11F81</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="txt_color">#D2000000</color>
+    <color name="gray">#A9424242</color>
+    <color name="view">#17424242</color>
+    <color name="light_gray">#C5C5C5</color>
+    <color name="dark_gray">#D0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_g">#9727B350</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_slider_screen1">#EE66A1</color>
+    <color name="bg_slider_screen2">#16bc7d</color>
+    <color name="bg_slider_screen3">#203d8c</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_screen1">#ffa000</color>
+    <color name="dot_inactive_screen2">#008c57</color>
+    <color name="dot_inactive_screen3">#0e1e49</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">#f9c772</color>
+    <color name="dot_active_screen2">#74f7c5</color>
+    <color name="dot_active_screen3">#3a67e0</color>
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen1</item>
+        <item>@color/dot_active_screen2</item>
+        <item>@color/dot_active_screen3</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen1</item>
+        <item>@color/dot_inactive_screen2</item>
+        <item>@color/dot_inactive_screen3</item>
+    </array>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UserProfile.AddUserAddressActivity">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/normal_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp">
+
+
+                <EditText
+                    android:id="@+id/tv_address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Full Name"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/tv_address_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address_name"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Pincode"
+                    android:inputType="phone"
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/tv_address_pincode"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:gravity="top|left"
+                    android:hint="Address"
+                    android:maxLines="3"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/tv_address_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_address"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border"
+                    android:hint="Landmark"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/tv_address_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:layout_below="@id/tv_address_landmark"
+
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp"
+
+                android:weightSum="1">
+
+
+                <EditText
+                    android:id="@+id/tv_address_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/border"
+                    android:hint="City"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/tv_address_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/border"
+                    android:hint="State"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+
+
+
+
+                <Button
+                    android:id="@+id/saveadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bubble_color"
+                    android:text="Save Address"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Account.Saved_Address_Activity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/normal_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_continue"
+        android:layout_below="@+id/toolbar">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_continue"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_fab"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/btncontinue"
+
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

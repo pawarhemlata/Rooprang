@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rooprang</string>
+    <string name="Baby">"बेबी "</string>
+    <string name="Trending_now">ट्रेंडिंग</string>
+    <string name="hey">नमस्ते</string>
+    <string name="home">"होम  "</string>
+    <string name="kids">"किड्स "</string>
+    <string name="feedback">"फीडबैक "</string>
+    <string name="forgotpwd">"फॉरगॉट पासवर्ड "</string>
+    <string name="fullname">" पूरा नाम"</string>
+    <string name="help">हेल्प</string>
+    <string name="landmark">"लैंडमार्क "</string>
+    <string name="newemail">अपना नया ईमेल नीचे दर्ज करें</string>
+    <string name="newpwd">नया पासवर्ड</string>
+    <string name="newuser">नए यूजर ?</string>
+    <string name="oldpwd">"पुराना पासवर्ड "</string>
+    <string name="orders">Your ऑर्डर्स</string>
+    <string name="password">पासवर्ड</string>
+    <string name="pincode">पिन कोड</string>
+    <string name="profiledetails">प्रोफ़ाइल विवरण</string>
+    <string name="rate">"रेट  "</string>
+    <string name="resetpwd">पासवर्ड रीसेट</string>
+    <string name="save">"सेव "</string>
+    <string name="saveandverify">"सेव एंड वेरीफाई "</string>
+    <string name="savedaddress">"सेव्ड एड्रेस "</string>
+    <string name="savedcards">"सेव्ड कार्ड्स "</string>
+    <string name="sendotp">" OTP भेजें"</string>
+    <string name="share">शेयर</string>
+    <string name="shopnow">"अभी ख़रीदे "</string>
+    <string name="signin">" साइन इन करें"</string>
+    <string name="signout">"साइन आउट करे "</string>
+    <string name="signup">" साइन अप करें"</string>
+    <string name="state">"राज्य "</string>
+    <string name="verifyyournumber">अपना खाता बनाने के लिए अपना नंबर वेरीफाई  करें</string>
+    <string name="wishlist">"विशलिस्ट "</string>
+    <string name="account">"अकाउंट "</string>
+    <string name="action_settings">"सेटिंग "</string>
+    <string name="addcart">कार्ट में डालें</string>
+    <string name="adresss">"पता "</string>
+    <string name="alreadyhavean">पहले से ही एक अकाउंट  है?</string>
+    <string name="cart">कार्ट</string>
+    <string name="categry">"कैटेगरीज "</string>
+    <string name="change">"चेंज "</string>
+    <string name="changepassword">" पासवर्ड बदलें"</string>
+    <string name="city">"शहर "</string>
+    <string name="cnfrmpassword">"पासवर्ड कन्फर्म करे "</string>
+    <string name="email">"ईमेल एड्रेस "</string>
+    <string name="emailorphone">" ईमेल / मोबाइल "</string>
+    <string name="next">आगे</string>
+    <string name="play_again">" फिर से चालू करें"</string>
+    <string name="play_again_desc">" स्लाइडर को फिर से देखने के लिए, गोटो सेटिंग्स -> ऐप्स -> स्वागत स्लाइडर -> स्पष्ट डेटा"</string>
+    <string name="proceed">"पे करने के लिए आगे बड़े "</string>
+    <string name="skip">"स्किप "</string>
+    <string name="view_all">" सभी देखें"</string>
+    <string name="top_brands">टॉप ब्रांड</string>
+    <string name="start">"आगे बड़े "</string>
+    <string name="slide_2_title">" सामान"</string>
+    <string name="language_hindi">" हिंदी"</string>
+    <string name="language_english">"अंग्रेज़ी"</string>
+
+
+    <!-- home-->
+
+
+    <string name="shopbycategory">Shop By Category </string>
+    <string name="bloominstyle">Bloom in Style</string>
+    <string name="latest_products">Latest Products</string>
+    <string name="stripe">The Stripe Tribe</string>
+    <string name="preety">Be Preety In Pink</string>
+    <string name="season_ending_sale">Season Ending Sale</string>
+    <string name="thepartyperfect">The Party Perfectonist</string>
+    <string name="SummerSpecial">Summer Special</string>
+    <string name="expectong_mother" translatable="false">Expecting Mother</string>
+    <string name="all" translatable="false">All</string>
+    <string name="baby_boy">Baby Boy</string>
+    <string name="baby_girl">Baby Girl</string>
+    <string name="new_born">New Born</string>
+    <string name="search_for_product_brand_and_more">Search for Products and more</string>
+    <!-- Inside acccount-->
+    <string name="haventorderyet" translatable="false">Looks like you haven\'t placed an order yet.</string>
+
+    <string name="changelanguage">Change Language</string>
+
+
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+    <string name="menu_tools" translatable="false">Tools</string>
+    <string name="menu_share" translatable="false">Share</string>
+    <string name="menu_send" translatable="false">Send</string>
+    <string name="menu_home">Home</string>
+
+
+
+
+
+
+    <string name="rs">Rs.</string>
+    <string name="link" translatable="false">http://svttesting.online/rooprangApi/</string>
+    <string name="select_size">Please Select Size !</string>
+    <string name="select_age">Please Select Age !</string>
+    <string name="select_pincode">Pincode required !</string>
+    <string name="goto_cart">Go To Cart</string>
+    <string name="available">Available</string>
+    <string name="shipping_charges">Shipping Charges</string>
+    <string name="product_not_shipped_this_place">Product isn\'t available at this place !</string>
+    <string name="rupees">Rs/-</string>
+    <string name="quantity">QTY :-</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_item_from_cart">Do you want to remove this Item from Cart ?</string>
+    <string name="no_items">No Item Added</string>
+    <string name="otp">Please Enter OTP</string>
+    <string name="Saved_addresses">Saved addresses</string>
+    <string name="add_addresses">Add Address</string>
+    <string name="address">Address :</string>
+    <string name="name">Name :</string>
+    <string name="mobile_no">Mobile No :</string>
+    <string name="letest_products">Letest Products</string>
+    <string name="dod">Deal Of The Day</string>
+
+    <string name="cod">Cash On Delivery</string>
+    <string name="online_pay">Pay Online</string>
+    <string name="Order_Summary">Order Summary</string>
+    <string name="access_code">Access Code</string>
+
+    <string name="pay_button">Pay</string>
+
+    <string name="merchant_id">Merchant Id</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="amount">Amount</string>
+
+    <string name="redirect_url">Redirect Url</string>
+
+    <string name="cancel_url">Cancel Url</string>
+
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="additemes">Add Items :</string>
+    <string name="Submit">Submit</string>
+    <string name="ProductDetail">Product Detail</string>
+    <string name="simillarproduct">"Similar Products "</string>
+    <string name="Pleasecheckavailblity">Please Check Availability</string>
+    <string name="walletbalance">Wallet Balance :</string>
+</resources>

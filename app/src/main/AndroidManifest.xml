@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tsi.rooprang">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:requiredFeature="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.My_Application"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.PaymentWebActivity"></activity>
+        <activity android:name=".Activity.InitialScreenActivity" />
+        <activity android:name=".Account.YourOrderDetailActivity" />
+        <activity android:name=".Account.YourOrderActivity" />
+        <activity android:name=".Account.OrderSummaryActivity" />
+        <activity android:name=".UserProfile.AddUserAddressActivity" />
+        <activity android:name=".Account.ChangeLanguageActivity" />
+        <activity android:name=".Account.Rate_Activity" />
+        <activity android:name=".Account.Share_Activity" />
+        <activity android:name=".LoginSignIn.ResetPasswordActivity" />
+        <activity android:name=".Account.Feedback_Activity" />
+        <activity android:name=".Account.Help_Activity" />
+        <activity android:name=".UserProfile.ChangePasswordActivity" />
+        <activity android:name=".Account.Credits_Activity" />
+        <activity android:name=".Account.SavedCards_Activity" />
+        <activity android:name=".Account.Saved_Address_Activity" />
+        <activity android:name=".Account.Wishlist" />
+        <activity android:name=".UserProfile.UserPasswordActivity" />
+        <activity android:name=".UserProfile.UserEmailActivity" />
+        <activity android:name=".UserProfile.UserMobileActivity" />
+        <activity android:name=".UserProfile.UserNameActivity" />
+        <activity android:name=".Activity.PFilter" />
+        <activity
+            android:name=".Account.ProfileDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".NotificationScreen.Notification" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity
+            android:name=".Activity.SubSubCategoryActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".LoginSignIn.SignInActivity" />
+        <activity android:name=".LoginSignIn.OTPActivity" />
+        <activity android:name=".LoginSignIn.RegistrationScreen" />
+        <activity android:name=".LoginSignIn.ForgotPasswordActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.ProductActivity" />
+        <activity android:name=".Activity.WelcomeActivity" />
+        <activity android:name=".Activity.ProductDescriptionActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

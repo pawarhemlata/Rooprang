@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/White"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/img_order_detail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/boy" />
+
+
+        <TextView
+            android:id="@+id/tv_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_order_detail"
+            android:text="Product Title"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_order_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_title"
+            android:layout_toRightOf="@id/img_order_detail"
+            android:padding="2dp"
+            android:text="Quantity"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_qty"
+            android:layout_toRightOf="@id/img_order_detail"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:padding="2dp"
+            android:text="550"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_orderoriginal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_order_qty"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_order_price"
+            android:drawableLeft="@drawable/ic_rupee_indian"
+            android:padding="2dp"
+            android:text="550"
+            android:textColor="@color/dark_gray"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:drawableEnd="@drawable/ic_rightarrow"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="View your Order"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

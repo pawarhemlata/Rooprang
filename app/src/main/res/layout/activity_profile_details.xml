@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Account.ProfileDetailsActivity">
+
+    <include layout="@layout/normal_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:id="@+id/tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profiledetails"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tittle"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Just 2 steps to go and your profile's compl..."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tittle"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_likeeee"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="35"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/userimage"
+            android:layout_marginRight="-10dp"
+            android:src="@drawable/ic_plusicon" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_user_1"
+            app:civ_border_color="#000" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbbanner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userimage"
+            android:layout_marginTop="10dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_uaddress"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawablePadding="15dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user_name"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_usmartphone"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawablePadding="15dp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user_phone"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_feedback"
+                android:drawableRight="@drawable/ic_edit"
+                android:drawablePadding="15dp"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user_email"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_upassword"
+                android:drawableRight="@drawable/ic_rightarrow"
+                android:drawablePadding="15dp"
+                android:padding="5dp"
+                android:text="@string/changepassword"
+                android:textColor="@color/black"
+
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_update_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bubble_color"
+        android:text="Update Profile"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

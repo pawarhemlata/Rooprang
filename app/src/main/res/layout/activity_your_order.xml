@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Account.YourOrderActivity">
+    <include layout="@layout/normal_toolbar"/>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_product_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_your_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

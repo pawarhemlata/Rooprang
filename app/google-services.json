@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "891507462850",
+    "firebase_url": "https://rooprang-e5ef9.firebaseio.com",
+    "project_id": "rooprang-e5ef9",
+    "storage_bucket": "rooprang-e5ef9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891507462850:android:54a4cc59dd5c62db74a15b",
+        "android_client_info": {
+          "package_name": "com.tsi.rooprang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891507462850-4q6vs45mhnsgnprc2vkrn8j6ptukboff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMcHzJm2-uSNdcRB2RnZfJ35UpLo-9rTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891507462850-4q6vs45mhnsgnprc2vkrn8j6ptukboff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

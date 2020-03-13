@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvSort"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:visibility="gone"
+        app:tabBackground="@drawable/tab_layout_selector"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="400dp"
+        app:tabMinWidth="300dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="16dp"
+        app:tabPaddingStart="16dp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:tabTextColor="@color/grey" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/product_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabLayout"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/lvSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ECEBEB"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llsort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_sort_amount" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="10dp"
+                android:text="Sort"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llfilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.5"
+            android:background="#ffffff"
+            android:gravity="center_vertical|center"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center"
+                android:src="@drawable/ic_filter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="10dp"
+                android:text="Filter"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_open_bottomsheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.50"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawableTint="@color/White"
+                android:text="SORT"
+                android:textColor="@color/White"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/White"/>
+
+            <TextView
+                android:id="@+id/txt_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.50"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawableTint="@color/White"
+                android:text="FILTER"
+                android:textColor="@color/White"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    -->
+</RelativeLayout>

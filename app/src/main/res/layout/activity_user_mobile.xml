@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile.UserMobileActivity">
+
+    <include layout="@layout/normal_toolbar"
+    />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter your new number below. This will be your account identity, from now"/>
+
+
+
+        <TextView
+            android:id="@+id/tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mobile number"
+            android:textSize="12sp"
+            android:layout_below="@id/heading"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/ueditmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tittle"
+            android:hint="1234567890"
+            android:padding="15dp"
+            android:background="@drawable/border"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ueditmobile"
+            android:text="@string/saveandverify"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bubble_color"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
