@@ -76,6 +76,7 @@ import retrofit2.Response;
 import static com.tsi.rooprang.Activity.MainActivity.bottomNavigation;
 
 public class HomeFragment extends Fragment {
+    public static HomeFragment homeFragment;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private String mParam1;
@@ -126,6 +127,7 @@ public class HomeFragment extends Fragment {
 
         view = inflater.inflate(R.layout.fragment_home, container, false);
         context = getActivity();
+        homeFragment = this;
         apiService = NewApiClient.getClient().create(ApiInterface.class);
 
         progress = new ProgressDialog(getActivity());
@@ -142,6 +144,14 @@ public class HomeFragment extends Fragment {
         call_home_api();
 
         category_list_dtos = new ArrayList<>();
+        categoryAdapter = new CategoryAdapter(context, category_list_dtos);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false);
+        recycler_cat.setLayoutManager(mLayoutManager);
+        recycler_cat.setItemAnimator(new DefaultItemAnimator());
+        recycler_cat.setNestedScrollingEnabled(true);
+
+        recycler_cat.setAdapter(categoryAdapter);
+
         getCategory();
 
         return view;
@@ -155,15 +165,11 @@ public class HomeFragment extends Fragment {
             public void onResponse(Call<CategoryHome_DTO> call, Response<CategoryHome_DTO> response) {
 
                 CategoryHome_DTO category_dto = response.body();
+                if (category_list_dtos != null) {
+                    category_list_dtos.clear();
+                }
                 if (category_dto.getStatus().equals("1")) {
                     category_list_dtos.addAll(category_dto.getData());
-
-                    categoryAdapter = new CategoryAdapter(context, category_list_dtos);
-                    RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false);
-                    recycler_cat.setLayoutManager(mLayoutManager);
-                    recycler_cat.setItemAnimator(new DefaultItemAnimator());
-                    recycler_cat.setAdapter(categoryAdapter);
-
                     categoryAdapter.notifyDataSetChanged();
                 }
 
@@ -176,6 +182,17 @@ public class HomeFragment extends Fragment {
         });
 
     }
+
+    public void click_on_all() {
+        bottomNavigation.setSelectedItemId(R.id.navcategory);
+        FragmentManager fragmentManager = ((MainActivity) context).getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
+                android.R.anim.fade_out);
+        fragmentTransaction.replace(R.id.container, new CategoryFragment());
+        fragmentTransaction.commit();
+    }
+
 
     private void set_all_adapters() {
 
@@ -422,61 +439,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////
-        iv_categry_baby_girl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vgirl = tv_categry_baby_girl.getText().toString();
-                Intent intent = new Intent(context, SubSubCategoryActivity.class);
-                intent.putExtra("item_name", vgirl);
-                intent.putExtra("item_position", "5");
-                context.startActivity(intent);
-            }
-        });
-        iv_categry_new_born.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vnewborn = tv_categry_new_born.getText().toString();
-                Intent intent = new Intent(context, SubSubCategoryActivity.class);
-                intent.putExtra("item_name", vnewborn);
-                intent.putExtra("item_position", "3");
-                context.startActivity(intent);
-            }
-        });
-        iv_categry_expecting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vexpectingmother = tv_categry_expecting.getText().toString();
-
-                Intent intent = new Intent(context, SubSubCategoryActivity.class);
-                intent.putExtra("item_name", vexpectingmother);
-                intent.putExtra("item_position", "2");
-                context.startActivity(intent);
-            }
-        });
-        iv_categry_all.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bottomNavigation.setSelectedItemId(R.id.navcategory);
-                FragmentManager fragmentManager = ((MainActivity) context).getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-                fragmentTransaction.replace(R.id.container, new CategoryFragment());
-                fragmentTransaction.commit();
-            }
-        });
-        iv_categry_baby_boy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vboy = tv_categry_baby_boy.getText().toString();
-                Intent intent = new Intent(context, SubSubCategoryActivity.class);
-                intent.putExtra("item_name", vboy);
-                intent.putExtra("item_position", "4");
-                context.startActivity(intent);
-            }
-        });
-
     }
 
     private void initialData() {
@@ -580,16 +542,6 @@ public class HomeFragment extends Fragment {
         txt_dod_view_all = (TextView) view.findViewById(R.id.txt_dod_view_all);
 
         view_all_trendy = (TextView) view.findViewById(R.id.view_all_trendy);
-        iv_categry_baby_girl = view.findViewById(R.id.iv_categry_baby_girl);
-        iv_categry_all = view.findViewById(R.id.iv_categry_all);
-        iv_categry_baby_boy = view.findViewById(R.id.iv_categry_baby_boy);
-        iv_categry_expecting = view.findViewById(R.id.iv_categry_expecting);
-        iv_categry_new_born = view.findViewById(R.id.iv_categry_new_born);
-        tv_categry_all = view.findViewById(R.id.tv_categry_all);
-        tv_categry_baby_boy = view.findViewById(R.id.tv_categry_baby_boy);
-        tv_categry_baby_girl = view.findViewById(R.id.tv_categry_baby_girl);
-        tv_categry_expecting = view.findViewById(R.id.tv_categry_expecting);
-        tv_categry_new_born = view.findViewById(R.id.tv_categry_new_born);
         iv_sale_banner = view.findViewById(R.id.iv_sale_banner);
         iv_banner_one = view.findViewById(R.id.iv_banner_one);
         iv_banner_two = view.findViewById(R.id.iv_banner_two);
